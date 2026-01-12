@@ -173,5 +173,5 @@ README.md
   解决方案：确认核心服务已启动，访问地址是否正确（http://localhost:8080/swagger-ui.html），检查Swagger配置类是否启用
 
 ## 10. 维护人员
-- 核心维护：本源不爱onani
-- 协作人员：陈涵文
+- 核心维护：本源不爱onani、Chen（模型训练）
+- 协作人员：GeminiMortal
