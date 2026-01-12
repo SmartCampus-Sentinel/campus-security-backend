@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2085381d-b4f4-4961-9fc0-238f16ef27bd" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="2085381d-b4f4-4961-9fc0-238f16ef27bd" name="更改" comment="try">
+      <change afterPath="$PROJECT_DIR$/src/ai/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ai/src/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ai/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/src/main/java/com/campus/security/core/CoreApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data-collection/src/main/java/com/campus/security/data/DataCollectionApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +73,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768235484342</updated>
-      <workItem from="1768235485624" duration="398000" />
+      <workItem from="1768235485624" duration="1461000" />
     </task>
+    <task id="LOCAL-00001" summary="try">
+      <option name="closed" value="true" />
+      <created>1768235919510</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1768235919510</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="try" />
+    <option name="LAST_COMMIT_MESSAGE" value="try" />
   </component>
 </project>
