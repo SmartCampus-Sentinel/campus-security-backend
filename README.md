@@ -14,7 +14,7 @@
 - 数据存储：MySQL 8.0（结构化数据）、Redis 6.2（缓存）
 - 其他组件：RabbitMQ（消息队列）、Swagger3（接口文档）、Logback（日志）
 ### 2.2 AI分析服务技术栈
-- 开发语言：Python 3.9+
+- 开发语言：Python 3.14
 - 核心框架：PyTorch 2.0+、FastAPI、OpenCV 4.8+
 - 模型：YOLOv8（目标检测）、OpenPose（姿态识别）
 ### 2.3 数据采集服务技术栈
