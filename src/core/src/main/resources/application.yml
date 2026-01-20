@@ -11,7 +11,7 @@ spring:
   # 数据库配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/campus_security?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://localhost:3306/campus_security_platform?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
     username: root # 替换为你的MySQL用户名
     password: 412412sl # 替换为你的MySQL密码
   # 跨域配置（适配Spring Boot 3.x）

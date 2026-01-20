@@ -1,15 +1,15 @@
 package com.campus.security.core;
 
-import org.mybatis.spring.annotation.MapperScan;
+//import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+//import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 /**
  * 校园安防平台启动类（移除Lombok）
  */
 @SpringBootApplication(scanBasePackages = "com.campus.security")
-//@MapperScan("com.campus.security.mapper") // 扫描MyBatis-Plus Mapper接口
+//@MapperScan("com.campus.security.mapper") // 扫描MyBatis-Plus Mapper接口 - 已注释
 public class CoreApplication {
     public static void main(String[] args) {
         SpringApplication.run(CoreApplication.class, args);
