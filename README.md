@@ -72,7 +72,7 @@ README.md
 ### 4.1 前置依赖
 - 需安装：
   1. Java 17+、Maven 3.8+（核心业务服务）
-  2. Python 3.9+、pip 22+（AI分析服务）
+  2. Python 3.14、pip 22+（AI分析服务）
   3. MySQL 8.0、Redis 6.2（数据存储）
   4. FFmpeg（视频处理，需配置环境变量）
   5. Git（版本控制）
