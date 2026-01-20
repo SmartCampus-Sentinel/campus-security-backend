@@ -7,6 +7,9 @@ server:
     uri-encoding: UTF-8 # 编码统一UTF-8
 
 spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
   # 2. 数据库配置（MySQL 5.7/8.0 通用）
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver # MySQL 8.0 驱动（5.7 用 com.mysql.jdbc.Driver）
