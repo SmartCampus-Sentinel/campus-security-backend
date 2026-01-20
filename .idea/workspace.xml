@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2085381d-b4f4-4961-9fc0-238f16ef27bd" name="更改" comment="feat(core): 初始化校园安防平台后端项目配置&#10;&#10;- 添加 application.yml 配置文件，包含服务器、数据库、日志、跨域等基础配置&#10;- 配置 Spring Boot、MyBatis-Plus、MySQL 等核心依赖项&#10;- 设置设备心跳超时、最大连接数、报警级别等业务配置参数&#10;- 配置 Maven 构建插件和项目打包设置&#10;- 更新 IDE 配置文件以支持 Java 21 和 Maven 项目管理">
-      <change beforePath="$PROJECT_DIR$/.idea/campus-security-backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/campus-security-backend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2085381d-b4f4-4961-9fc0-238f16ef27bd" name="更改" comment="chore(build): 更新项目构建配置和IDE设置&#10;&#10;- 在模块配置中添加资源文件夹路径&#10;- 配置Java编译器参数支持&#10;- 设置UTF-8编码配置&#10;- 添加Maven仓库配置包括阿里云镜像&#10;- 优化pom.xml中的依赖管理和插件配置&#10;- 更新IDE工作区配置和任务记录" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +88,7 @@
       <workItem from="1768884272692" duration="381000" />
       <workItem from="1768884767279" duration="87000" />
       <workItem from="1768885053096" duration="830000" />
-      <workItem from="1768886046646" duration="1198000" />
+      <workItem from="1768886046646" duration="1921000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <option name="closed" value="true" />
@@ -119,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768886491485</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="chore(build): 更新项目构建配置和IDE设置&#10;&#10;- 在模块配置中添加资源文件夹路径&#10;- 配置Java编译器参数支持&#10;- 设置UTF-8编码配置&#10;- 添加Maven仓库配置包括阿里云镜像&#10;- 优化pom.xml中的依赖管理和插件配置&#10;- 更新IDE工作区配置和任务记录">
+      <option name="closed" value="true" />
+      <created>1768887467794</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1768887467794</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -201,7 +204,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="try" />
     <MESSAGE value="feat(core): 初始化校园安防平台后端项目配置&#10;&#10;- 添加 application.yml 配置文件，包含服务器、数据库、日志、跨域等基础配置&#10;- 配置 Spring Boot、MyBatis-Plus、MySQL 等核心依赖项&#10;- 设置设备心跳超时、最大连接数、报警级别等业务配置参数&#10;- 配置 Maven 构建插件和项目打包设置&#10;- 更新 IDE 配置文件以支持 Java 21 和 Maven 项目管理" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(core): 初始化校园安防平台后端项目配置&#10;&#10;- 添加 application.yml 配置文件，包含服务器、数据库、日志、跨域等基础配置&#10;- 配置 Spring Boot、MyBatis-Plus、MySQL 等核心依赖项&#10;- 设置设备心跳超时、最大连接数、报警级别等业务配置参数&#10;- 配置 Maven 构建插件和项目打包设置&#10;- 更新 IDE 配置文件以支持 Java 21 和 Maven 项目管理" />
+    <MESSAGE value="chore(build): 更新项目构建配置和IDE设置&#10;&#10;- 在模块配置中添加资源文件夹路径&#10;- 配置Java编译器参数支持&#10;- 设置UTF-8编码配置&#10;- 添加Maven仓库配置包括阿里云镜像&#10;- 优化pom.xml中的依赖管理和插件配置&#10;- 更新IDE工作区配置和任务记录" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(build): 更新项目构建配置和IDE设置&#10;&#10;- 在模块配置中添加资源文件夹路径&#10;- 配置Java编译器参数支持&#10;- 设置UTF-8编码配置&#10;- 添加Maven仓库配置包括阿里云镜像&#10;- 优化pom.xml中的依赖管理和插件配置&#10;- 更新IDE工作区配置和任务记录" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
