@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2085381d-b4f4-4961-9fc0-238f16ef27bd" name="更改" comment="try">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2026_1_13_00_24____.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2026_1_13_00_24_取消提交了更改_[更改]/shelved.patch" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/MarsCodeWorkspaceAppSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/campus-security-backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/campus-security-backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +32,12 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/SmartCampus-Sentinel/campus-security-backend.git&quot;,
-    &quot;accountId&quot;: &quot;39a974d7-8e1f-4424-aacb-a2ace81110a0&quot;
+    &quot;accountId&quot;: &quot;ddbfcb5f-7b81-4217-aad1-936daba3f738&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -37,28 +46,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/work/DREAMX/proprogram/SmartCampus-Sentinel/campus-security-backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PY-251.28774.16" />
-        <option value="bundled-python-sdk-14d54ed193d7-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.28774.16" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
       </set>
     </attachedChunks>
   </component>
@@ -71,7 +90,15 @@
       <updated>1768235484342</updated>
       <workItem from="1768235485624" duration="1461000" />
       <workItem from="1768808594073" duration="754000" />
-      <workItem from="1768879046658" duration="379000" />
+      <workItem from="1768879046658" duration="1318000" />
+      <workItem from="1768882586112" duration="352000" />
+      <workItem from="1768883000989" duration="477000" />
+      <workItem from="1768883495468" duration="44000" />
+      <workItem from="1768883549373" duration="702000" />
+      <workItem from="1768884272692" duration="381000" />
+      <workItem from="1768884767279" duration="87000" />
+      <workItem from="1768885053096" duration="830000" />
+      <workItem from="1768886046646" duration="352000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <option name="closed" value="true" />
@@ -81,14 +108,99 @@
       <option name="project" value="LOCAL" />
       <updated>1768235919510</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="try">
+      <option name="closed" value="true" />
+      <created>1768879514699</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1768879514699</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <envs>
+      <env key="ACSetupSvcPort" value="23210" />
+      <env key="ALLUSERSPROFILE" value="\=C:\ProgramData" />
+      <env key="APPDATA" value="C:\Users\sunlihaomin\AppData\Roaming" />
+      <env key="CANGJIE_HOME" value="D:\work\DREAMX\ide\Cangjie" />
+      <env key="CANGJIE_SDK" value="D:\work\DREAMX\ide\Cangjie" />
+      <env key="ChocolateyInstall" value="C:\ProgramData\chocolatey" />
+      <env key="ChocolateyLastPathUpdate" value="134088045521691610" />
+      <env key="CLion" value="D:\work\DREAMX\ide\CLion 2025.2.1\bin" />
+      <env key="CommonProgramFiles" value="C:\Program Files\Common Files" />
+      <env key="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files" />
+      <env key="CommonProgramW6432" value="C:\Program Files\Common Files" />
+      <env key="COMPUTERNAME" value="SZZFC" />
+      <env key="ComSpec" value="C:\Windows\system32\cmd.exe" />
+      <env key="DataGrip" value="D:\DataGrip\DataGrip 2025.2.4\bin" />
+      <env key="DevEco Studio" value="D:\DevEco Studio\bin;" />
+      <env key="DriverData" value="C:\Windows\System32\Drivers\DriverData" />
+      <env key="EFC_17796_1592913036" value="1" />
+      <env key="EnableLog" value="INFO" />
+      <env key="GOPATH" value="C:\Users\sunlihaomin\go" />
+      <env key="HDC_SERVER_PORT" value="65037" />
+      <env key="HOMEDRIVE" value="C:" />
+      <env key="HOMEPATH" value="\Users\sunlihaomin" />
+      <env key="IntelliJ IDEA" value="D:\work\DREAMX\ide\IntelliJ IDEA 2025.2.5\bin" />
+      <env key="JAVA_HOME" value="D:\work\DREAMX\ide\JDK;JetBrains Rider=D:\work\DREAMX\ide\JetBrains Rider 2025.3.0.2\bin" />
+      <env key="LOCALAPPDATA" value="C:\Users\sunlihaomin\AppData\Local" />
+      <env key="LOGONSERVER" value="\\SZZFC" />
+      <env key="MAVEN_HOME" value="D:\apache-maven" />
+      <env key="NUMBER_OF_PROCESSORS" value="24" />
+      <env key="OLLAMA_HOST" value="127.0.0.1:11434" />
+      <env key="OLLAMA_MODELS" value="D:\ollama_models" />
+      <env key="OneDrive" value="C:\Users\sunlihaomin\OneDrive" />
+      <env key="OS" value="Windows_NT" />
+      <env key="Path" value="C:\Users\sunlihaomin\scoop\apps\python313\current\Scripts;C:\Users\sunlihaomin\scoop\apps\python313\current;C:\Users\sunlihaomin\scoop\shims;C:\Users\sunlihaomin\AppData\Local\cloudbase-cli\bin;D:\work\DREAMX\ide\python\Scripts\;D:\work\DREAMX\ide\python\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\sunlihaomin\AppData\Local\Microsoft\WindowsApps;D:\PyCharm 2025.1.2\bin;D:\DevEco Studio\bin;D:\work\DREAMX\ide\CLion 2025.2.1\bin;C:\Users\sunlihaomin\.dotnet\tools;D:\work\DREAMX\ide\Microsoft VS Code\bin;D:\DataGrip\DataGrip 2025.2.4\bin;C:\Users\sunlihaomin\AppData\Local\GitHubDesktop\bin;C:\Users\sunlihaomin\go\bin;C:\Users\sunlihaomin\AppData\Roaming\npm;D:\work\DREAMX\ide\PhpStorm 2025.2.4\bin;D:\work\DREAMX\ide\CodeBuddy\bin;D:\work\DREAMX\ide\IntelliJ IDEA 2025.2.5\bin;D:\work\DREAMX\ide\WebStorm 2025.2.5\bin;D:\work\DREAMX\ide\JetBrains Rider 2025.3.0.2\bin;C:\Users\sunlihaomin\AppData\Local\Chocolatey\bin;D:\work\DREAMX\ide\Kiro\bin;C:\Users\sunlihaomin\AppData\Local\Programs\Ollama;C:\Users\sunlihaomin\.lmstudio\bin;C:\Windows\System32\cmd.exe;C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe;D:\work\DREAMX\ide\Git\bin;C:\Users\sunlihaomin\scoop\apps\python313\current\Scripts;C:\Users\sunlihaomin\scoop\apps\python313\current;C:\Users\sunlihaomin\scoop\shims;C:\Users\sunlihaomin\AppData\Local\cloudbase-cli\bin;D:\work\DREAMX\ide\python\Scripts\;D:\work\DREAMX\ide\python\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\sunlihaomin\AppData\Local\Microsoft\WindowsApps;D:\PyCharm 2025.1.2\bin;D:\DevEco Studio\bin;D:\work\DREAMX\ide\CLion 2025.2.1\bin;C:\Users\sunlihaomin\.dotnet\tools;D:\work\DREAMX\ide\Microsoft VS Code\bin;D:\DataGrip\DataGrip 2025.2.4\bin;C:\Users\sunlihaomin\AppData\Local\GitHubDesktop\bin;C:\Users\sunlihaomin\go\bin;C:\Users\sunlihaomin\AppData\Roaming\npm;D:\work\DREAMX\ide\PhpStorm 2025.2.4\bin;D:\work\DREAMX\ide\CodeBuddy\bin;D:\work\DREAMX\ide\IntelliJ IDEA 2025.2.5\bin;D:\work\DREAMX\ide\WebStorm 2025.2.5\bin;D:\work\DREAMX\ide\JetBrains Rider 2025.3.0.2\bin;C:\Users\sunlihaomin\AppData\Local\Chocolatey\bin;D:\work\DREAMX\ide\Kiro\bin;C:\Users\sunlihaomin\AppData\Local\Programs\Ollama;C:\Users\sunlihaomin\.lmstudio\bin;C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe;C:\Windows\System32\cmd.exe;D:\work\DREAMX\ide\Git\bin;" />
+      <env key="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW" />
+      <env key="PhpStorm" value="D:\work\DREAMX\ide\PhpStorm 2025.2.4\bin" />
+      <env key="PROCESSOR_ARCHITECTURE" value="AMD64" />
+      <env key="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 198 Stepping 2, GenuineIntel" />
+      <env key="PROCESSOR_LEVEL" value="6" />
+      <env key="PROCESSOR_REVISION" value="c602" />
+      <env key="ProgramData" value="C:\ProgramData" />
+      <env key="ProgramFiles" value="C:\Program Files" />
+      <env key="ProgramFiles(x86)" value="C:\Program Files (x86)" />
+      <env key="ProgramW6432" value="C:\Program Files" />
+      <env key="PSModulePath" value="C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules" />
+      <env key="PUBLIC" value="C:\Users\Public" />
+      <env key="PyCharm" value="D:\PyCharm 2025.1.2\bin;" />
+      <env key="RlsSvcPort" value="22112" />
+      <env key="SESSIONNAME" value="Console" />
+      <env key="SystemDrive" value="C:" />
+      <env key="SystemRoot" value="C:\Windows" />
+      <env key="TEMP" value="C:\Users\SUNLIH~1\AppData\Local\Temp" />
+      <env key="TMP" value="C:\Users\SUNLIH~1\AppData\Local\Temp" />
+      <env key="USERDOMAIN" value="SZZFC" />
+      <env key="USERDOMAIN_ROAMINGPROFILE" value="SZZFC" />
+      <env key="USERNAME" value="sunlihaomin" />
+      <env key="USERPROFILE" value="C:\Users\sunlihaomin" />
+      <env key="VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox;WebStorm=D:\work\DREAMX\ide\WebStorm 2025.2.5\bin" />
+      <env key="windir" value="C:\Windows" />
+    </envs>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="try" />
     <option name="LAST_COMMIT_MESSAGE" value="try" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
