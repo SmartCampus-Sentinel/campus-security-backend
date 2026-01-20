@@ -1,46 +1,46 @@
-# 1. 基础应用配置
+# 服务器配置
 server:
-  port: 8888 # 后端端口
+  port: 8080
   servlet:
     context-path: /api # 接口前缀
   tomcat:
-    uri-encoding: UTF-8 # 编码统一UTF-8
+    uri-encoding: UTF-8 # 编码格式
 
-# 2. 数据库配置（MySQL 8.0 通用）
+# Spring核心配置
 spring:
+  # 数据库配置
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver # MySQL 8.x 驱动
-    url: jdbc:mysql://localhost:3306/campus_security_platform?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
-    username: root # 你的 MySQL 用户名
-    password: 412412s1 # 你的 MySQL 密码
-  # 3. 日志配置
-  logging:
-    level:
-      root: INFO
-      com.campus.security: DEBUG # 业务包名，调试时开DEBUG
-    file:
-      name: logs/campus-security.log # 日志文件路径
-  # 4. 跨域配置（Spring Boot 2.7+ 正确路径）
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/campus_security?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root # 替换为你的MySQL用户名
+    password: 412412sl # 替换为你的MySQL密码
+  # 跨域配置（适配Spring Boot 3.x）
   web:
     cors:
       allowed-origins: "http://localhost:5173" # 前端地址
       allowed-methods: GET,POST,PUT,DELETE,OPTIONS
       allowed-headers: "*"
       allow-credentials: true
+      max-age: 3600
+  # 日志配置
+  logging:
+    level:
+      root: INFO
+      com.campus.security: DEBUG # 业务包日志级别
+    file:
+      name: logs/campus-security.log # 日志文件路径
 
-# 5. MyBatis-Plus 配置
+# MyBatis-Plus配置
 mybatis-plus:
-  mapper-locations: classpath:mapper/**/*.xml # Mapper XML 文件路径
+  mapper-locations: classpath:mapper/**/*.xml # Mapper XML路径
   type-aliases-package: com.campus.security.entity # 实体类包名
   configuration:
     map-underscore-to-camel-case: true # 下划线转驼峰
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 打印SQL（开发环境）
 
-# 6. 自定义业务配置（校园安防专属）
+# 自定义业务配置
 business:
   device:
     heartbeat-timeout: 300 # 设备心跳超时（秒）
-    max-connect-num: 1000 # 最大设备连接数
   alarm:
-    level1-notice: true # 一级报警是否推送通知
     auto-clean-log-days: 90 # 报警日志自动清理（天）
