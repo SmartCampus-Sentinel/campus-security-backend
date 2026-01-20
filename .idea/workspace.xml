@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2085381d-b4f4-4961-9fc0-238f16ef27bd" name="更改" comment="try">
-      <change beforePath="$PROJECT_DIR$/.idea/campus-security-backend.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/src/main/java/com/campus/security/core/CoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/src/main/java/com/campus/security/core/CoreApplication.java" afterDir="false" />
-    </list>
+    <list default="true" id="2085381d-b4f4-4961-9fc0-238f16ef27bd" name="更改" comment="try" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
