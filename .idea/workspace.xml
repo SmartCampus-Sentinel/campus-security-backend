@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2085381d-b4f4-4961-9fc0-238f16ef27bd" name="更改" comment="try">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/MarsCodeWorkspaceAppSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="2085381d-b4f4-4961-9fc0-238f16ef27bd" name="更改" comment="feat(core): 初始化校园安防平台后端项目配置&#10;&#10;- 添加 application.yml 配置文件，包含服务器、数据库、日志、跨域等基础配置&#10;- 配置 Spring Boot、MyBatis-Plus、MySQL 等核心依赖项&#10;- 设置设备心跳超时、最大连接数、报警级别等业务配置参数&#10;- 配置 Maven 构建插件和项目打包设置&#10;- 更新 IDE 配置文件以支持 Java 21 和 Maven 项目管理">
       <change beforePath="$PROJECT_DIR$/.idea/campus-security-backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/campus-security-backend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +31,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -98,7 +93,7 @@
       <workItem from="1768884272692" duration="381000" />
       <workItem from="1768884767279" duration="87000" />
       <workItem from="1768885053096" duration="830000" />
-      <workItem from="1768886046646" duration="352000" />
+      <workItem from="1768886046646" duration="1198000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <option name="closed" value="true" />
@@ -116,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768879514699</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat(core): 初始化校园安防平台后端项目配置&#10;&#10;- 添加 application.yml 配置文件，包含服务器、数据库、日志、跨域等基础配置&#10;- 配置 Spring Boot、MyBatis-Plus、MySQL 等核心依赖项&#10;- 设置设备心跳超时、最大连接数、报警级别等业务配置参数&#10;- 配置 Maven 构建插件和项目打包设置&#10;- 更新 IDE 配置文件以支持 Java 21 和 Maven 项目管理">
+      <option name="closed" value="true" />
+      <created>1768886491485</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1768886491485</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -197,7 +200,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="try" />
-    <option name="LAST_COMMIT_MESSAGE" value="try" />
+    <MESSAGE value="feat(core): 初始化校园安防平台后端项目配置&#10;&#10;- 添加 application.yml 配置文件，包含服务器、数据库、日志、跨域等基础配置&#10;- 配置 Spring Boot、MyBatis-Plus、MySQL 等核心依赖项&#10;- 设置设备心跳超时、最大连接数、报警级别等业务配置参数&#10;- 配置 Maven 构建插件和项目打包设置&#10;- 更新 IDE 配置文件以支持 Java 21 和 Maven 项目管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(core): 初始化校园安防平台后端项目配置&#10;&#10;- 添加 application.yml 配置文件，包含服务器、数据库、日志、跨域等基础配置&#10;- 配置 Spring Boot、MyBatis-Plus、MySQL 等核心依赖项&#10;- 设置设备心跳超时、最大连接数、报警级别等业务配置参数&#10;- 配置 Maven 构建插件和项目打包设置&#10;- 更新 IDE 配置文件以支持 Java 21 和 Maven 项目管理" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
