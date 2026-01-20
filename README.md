@@ -9,7 +9,7 @@
 
 ## 2. 技术栈
 ### 2.1 核心业务服务技术栈
-- 开发语言：Java 17+
+- 开发语言：Java 17
 - 核心框架：Spring Boot 3.x、Spring Security、MyBatis-Plus
 - 数据存储：MySQL 8.0（结构化数据）、Redis 6.2（缓存）
 - 其他组件：RabbitMQ（消息队列）、Swagger3（接口文档）、Logback（日志）
