@@ -4,11 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2085381d-b4f4-4961-9fc0-238f16ef27bd" name="更改" comment="try" />
+    <list default="true" id="2085381d-b4f4-4961-9fc0-238f16ef27bd" name="更改" comment="chore(build): 更新项目构建配置和IDE设置&#10;&#10;- 在模块配置中添加资源文件夹路径&#10;- 配置Java编译器参数支持&#10;- 设置UTF-8编码配置&#10;- 添加Maven仓库配置包括阿里云镜像&#10;- 优化pom.xml中的依赖管理和插件配置&#10;- 更新IDE工作区配置和任务记录">
+      <change afterPath="$PROJECT_DIR$/campus-security-backend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/src/test/java/com/smartcampus/generator/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -19,52 +36,59 @@
     &quot;assignee&quot;: &quot;htq20080119&quot;
   }
 }</component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="39a974d7-8e1f-4424-aacb-a2ace81110a0" />
-  </component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/SmartCampus-Sentinel/campus-security-backend.git&quot;,
-    &quot;accountId&quot;: &quot;ddbfcb5f-7b81-4217-aad1-936daba3f738&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/SmartCampus-Sentinel/campus-security-backend.git",
+    "accountId": "7a1ab7e7-e688-49a4-974c-8dea16f6676c"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="38AHW8M6wsEqMuvlHLjHu4SaeM4" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/work/DREAMX/proprogram/SmartCampus-Sentinel/campus-security-backend&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/work/DREAMX/proprogram/SmartCampus-Sentinel/campus-security-backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "configurable.group.database.main",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.CodeGenerator.executor": "Run"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
-        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
       </set>
     </attachedChunks>
   </component>
@@ -79,6 +103,14 @@
       <workItem from="1768808594073" duration="754000" />
       <workItem from="1768879046658" duration="1318000" />
       <workItem from="1768882586112" duration="352000" />
+      <workItem from="1768883000989" duration="477000" />
+      <workItem from="1768883495468" duration="44000" />
+      <workItem from="1768883549373" duration="702000" />
+      <workItem from="1768884272692" duration="381000" />
+      <workItem from="1768884767279" duration="87000" />
+      <workItem from="1768885053096" duration="830000" />
+      <workItem from="1768886046646" duration="1921000" />
+      <workItem from="1768890216984" duration="6654000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <option name="closed" value="true" />
@@ -96,23 +128,106 @@
       <option name="project" value="LOCAL" />
       <updated>1768879514699</updated>
     </task>
-    <task id="LOCAL-00003" summary="try">
+    <task id="LOCAL-00003" summary="feat(core): 初始化校园安防平台后端项目配置&#10;&#10;- 添加 application.yml 配置文件，包含服务器、数据库、日志、跨域等基础配置&#10;- 配置 Spring Boot、MyBatis-Plus、MySQL 等核心依赖项&#10;- 设置设备心跳超时、最大连接数、报警级别等业务配置参数&#10;- 配置 Maven 构建插件和项目打包设置&#10;- 更新 IDE 配置文件以支持 Java 21 和 Maven 项目管理">
       <option name="closed" value="true" />
-      <created>1768890410643</created>
+      <created>1768886491485</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1768890410643</updated>
+      <updated>1768886491485</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="chore(build): 更新项目构建配置和IDE设置&#10;&#10;- 在模块配置中添加资源文件夹路径&#10;- 配置Java编译器参数支持&#10;- 设置UTF-8编码配置&#10;- 添加Maven仓库配置包括阿里云镜像&#10;- 优化pom.xml中的依赖管理和插件配置&#10;- 更新IDE工作区配置和任务记录">
+      <option name="closed" value="true" />
+      <created>1768887467794</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1768887467794</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <envs>
+      <env key="ACSetupSvcPort" value="23210" />
+      <env key="ALLUSERSPROFILE" value="\=C:\ProgramData" />
+      <env key="APPDATA" value="C:\Users\sunlihaomin\AppData\Roaming" />
+      <env key="CANGJIE_HOME" value="D:\work\DREAMX\ide\Cangjie" />
+      <env key="CANGJIE_SDK" value="D:\work\DREAMX\ide\Cangjie" />
+      <env key="ChocolateyInstall" value="C:\ProgramData\chocolatey" />
+      <env key="ChocolateyLastPathUpdate" value="134088045521691610" />
+      <env key="CLion" value="D:\work\DREAMX\ide\CLion 2025.2.1\bin" />
+      <env key="CommonProgramFiles" value="C:\Program Files\Common Files" />
+      <env key="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files" />
+      <env key="CommonProgramW6432" value="C:\Program Files\Common Files" />
+      <env key="COMPUTERNAME" value="SZZFC" />
+      <env key="ComSpec" value="C:\Windows\system32\cmd.exe" />
+      <env key="DataGrip" value="D:\DataGrip\DataGrip 2025.2.4\bin" />
+      <env key="DevEco Studio" value="D:\DevEco Studio\bin;" />
+      <env key="DriverData" value="C:\Windows\System32\Drivers\DriverData" />
+      <env key="EFC_17796_1592913036" value="1" />
+      <env key="EnableLog" value="INFO" />
+      <env key="GOPATH" value="C:\Users\sunlihaomin\go" />
+      <env key="HDC_SERVER_PORT" value="65037" />
+      <env key="HOMEDRIVE" value="$PROJECT_DIR$/../../../.." />
+      <env key="HOMEPATH" value="\Users\sunlihaomin" />
+      <env key="IntelliJ IDEA" value="D:\work\DREAMX\ide\IntelliJ IDEA 2025.2.5\bin" />
+      <env key="JAVA_HOME" value="D:\work\DREAMX\ide\JDK;JetBrains Rider=D:\work\DREAMX\ide\JetBrains Rider 2025.3.0.2\bin" />
+      <env key="LOCALAPPDATA" value="C:\Users\sunlihaomin\AppData\Local" />
+      <env key="LOGONSERVER" value="\\SZZFC" />
+      <env key="MAVEN_HOME" value="D:\apache-maven" />
+      <env key="NUMBER_OF_PROCESSORS" value="24" />
+      <env key="OLLAMA_HOST" value="127.0.0.1:11434" />
+      <env key="OLLAMA_MODELS" value="D:\ollama_models" />
+      <env key="OneDrive" value="C:\Users\sunlihaomin\OneDrive" />
+      <env key="OS" value="Windows_NT" />
+      <env key="Path" value="C:\Users\sunlihaomin\scoop\apps\python313\current\Scripts;C:\Users\sunlihaomin\scoop\apps\python313\current;C:\Users\sunlihaomin\scoop\shims;C:\Users\sunlihaomin\AppData\Local\cloudbase-cli\bin;D:\work\DREAMX\ide\python\Scripts\;D:\work\DREAMX\ide\python\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\sunlihaomin\AppData\Local\Microsoft\WindowsApps;D:\PyCharm 2025.1.2\bin;D:\DevEco Studio\bin;D:\work\DREAMX\ide\CLion 2025.2.1\bin;C:\Users\sunlihaomin\.dotnet\tools;D:\work\DREAMX\ide\Microsoft VS Code\bin;D:\DataGrip\DataGrip 2025.2.4\bin;C:\Users\sunlihaomin\AppData\Local\GitHubDesktop\bin;C:\Users\sunlihaomin\go\bin;C:\Users\sunlihaomin\AppData\Roaming\npm;D:\work\DREAMX\ide\PhpStorm 2025.2.4\bin;D:\work\DREAMX\ide\CodeBuddy\bin;D:\work\DREAMX\ide\IntelliJ IDEA 2025.2.5\bin;D:\work\DREAMX\ide\WebStorm 2025.2.5\bin;D:\work\DREAMX\ide\JetBrains Rider 2025.3.0.2\bin;C:\Users\sunlihaomin\AppData\Local\Chocolatey\bin;D:\work\DREAMX\ide\Kiro\bin;C:\Users\sunlihaomin\AppData\Local\Programs\Ollama;C:\Users\sunlihaomin\.lmstudio\bin;C:\Windows\System32\cmd.exe;C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe;D:\work\DREAMX\ide\Git\bin;C:\Users\sunlihaomin\scoop\apps\python313\current\Scripts;C:\Users\sunlihaomin\scoop\apps\python313\current;C:\Users\sunlihaomin\scoop\shims;C:\Users\sunlihaomin\AppData\Local\cloudbase-cli\bin;D:\work\DREAMX\ide\python\Scripts\;D:\work\DREAMX\ide\python\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\sunlihaomin\AppData\Local\Microsoft\WindowsApps;D:\PyCharm 2025.1.2\bin;D:\DevEco Studio\bin;D:\work\DREAMX\ide\CLion 2025.2.1\bin;C:\Users\sunlihaomin\.dotnet\tools;D:\work\DREAMX\ide\Microsoft VS Code\bin;D:\DataGrip\DataGrip 2025.2.4\bin;C:\Users\sunlihaomin\AppData\Local\GitHubDesktop\bin;C:\Users\sunlihaomin\go\bin;C:\Users\sunlihaomin\AppData\Roaming\npm;D:\work\DREAMX\ide\PhpStorm 2025.2.4\bin;D:\work\DREAMX\ide\CodeBuddy\bin;D:\work\DREAMX\ide\IntelliJ IDEA 2025.2.5\bin;D:\work\DREAMX\ide\WebStorm 2025.2.5\bin;D:\work\DREAMX\ide\JetBrains Rider 2025.3.0.2\bin;C:\Users\sunlihaomin\AppData\Local\Chocolatey\bin;D:\work\DREAMX\ide\Kiro\bin;C:\Users\sunlihaomin\AppData\Local\Programs\Ollama;C:\Users\sunlihaomin\.lmstudio\bin;C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe;C:\Windows\System32\cmd.exe;D:\work\DREAMX\ide\Git\bin;" />
+      <env key="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW" />
+      <env key="PhpStorm" value="D:\work\DREAMX\ide\PhpStorm 2025.2.4\bin" />
+      <env key="PROCESSOR_ARCHITECTURE" value="AMD64" />
+      <env key="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 198 Stepping 2, GenuineIntel" />
+      <env key="PROCESSOR_LEVEL" value="6" />
+      <env key="PROCESSOR_REVISION" value="c602" />
+      <env key="ProgramData" value="C:\ProgramData" />
+      <env key="ProgramFiles" value="C:\Program Files" />
+      <env key="ProgramFiles(x86)" value="C:\Program Files (x86)" />
+      <env key="ProgramW6432" value="C:\Program Files" />
+      <env key="PSModulePath" value="C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules" />
+      <env key="PUBLIC" value="C:\Users\Public" />
+      <env key="PyCharm" value="D:\PyCharm 2025.1.2\bin;" />
+      <env key="RlsSvcPort" value="22112" />
+      <env key="SESSIONNAME" value="Console" />
+      <env key="SystemDrive" value="$PROJECT_DIR$/../../../.." />
+      <env key="SystemRoot" value="C:\Windows" />
+      <env key="TEMP" value="C:\Users\SUNLIH~1\AppData\Local\Temp" />
+      <env key="TMP" value="C:\Users\SUNLIH~1\AppData\Local\Temp" />
+      <env key="USERDOMAIN" value="SZZFC" />
+      <env key="USERDOMAIN_ROAMINGPROFILE" value="SZZFC" />
+      <env key="USERNAME" value="sunlihaomin" />
+      <env key="USERPROFILE" value="C:\Users\sunlihaomin" />
+      <env key="VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox;WebStorm=D:\work\DREAMX\ide\WebStorm 2025.2.5\bin" />
+      <env key="windir" value="C:\Windows" />
+    </envs>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="try" />
-    <option name="LAST_COMMIT_MESSAGE" value="try" />
+    <MESSAGE value="feat(core): 初始化校园安防平台后端项目配置&#10;&#10;- 添加 application.yml 配置文件，包含服务器、数据库、日志、跨域等基础配置&#10;- 配置 Spring Boot、MyBatis-Plus、MySQL 等核心依赖项&#10;- 设置设备心跳超时、最大连接数、报警级别等业务配置参数&#10;- 配置 Maven 构建插件和项目打包设置&#10;- 更新 IDE 配置文件以支持 Java 21 和 Maven 项目管理" />
+    <MESSAGE value="chore(build): 更新项目构建配置和IDE设置&#10;&#10;- 在模块配置中添加资源文件夹路径&#10;- 配置Java编译器参数支持&#10;- 设置UTF-8编码配置&#10;- 添加Maven仓库配置包括阿里云镜像&#10;- 优化pom.xml中的依赖管理和插件配置&#10;- 更新IDE工作区配置和任务记录" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(build): 更新项目构建配置和IDE设置&#10;&#10;- 在模块配置中添加资源文件夹路径&#10;- 配置Java编译器参数支持&#10;- 设置UTF-8编码配置&#10;- 添加Maven仓库配置包括阿里云镜像&#10;- 优化pom.xml中的依赖管理和插件配置&#10;- 更新IDE工作区配置和任务记录" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
