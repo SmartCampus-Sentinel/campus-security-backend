@@ -5,14 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2085381d-b4f4-4961-9fc0-238f16ef27bd" name="更改" comment="chore(build): 更新项目构建配置和IDE设置&#10;&#10;- 在模块配置中添加资源文件夹路径&#10;- 配置Java编译器参数支持&#10;- 设置UTF-8编码配置&#10;- 添加Maven仓库配置包括阿里云镜像&#10;- 优化pom.xml中的依赖管理和插件配置&#10;- 更新IDE工作区配置和任务记录">
-      <change afterPath="$PROJECT_DIR$/campus-security-backend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/src/test/java/com/smartcampus/generator/CodeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smartcampus/common/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smartcampus/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smartcampus/dto/LoginDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microsoft/Windows/PowerShell/PSReadLine/ConsoleHost_history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Microsoft/Windows/PowerShell/PSReadLine/ConsoleHost_history.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartcampus/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartcampus/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartcampus/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartcampus/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/campus-security-backend-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/campus-security-backend-1.0.0.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartcampus/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartcampus/service/IUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartcampus/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartcampus/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/smartcampus/generator/CodeGenerator.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +34,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -36,12 +43,12 @@
     &quot;assignee&quot;: &quot;htq20080119&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/SmartCampus-Sentinel/campus-security-backend.git",
-    "accountId": "7a1ab7e7-e688-49a4-974c-8dea16f6676c"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SmartCampus-Sentinel/campus-security-backend.git&quot;,
+    &quot;accountId&quot;: &quot;7a1ab7e7-e688-49a4-974c-8dea16f6676c&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -54,10 +61,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.campus-security-backend [clean].executor": "Run",
+    "Maven.campus-security-backend [compile].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.SmartCampusApplication.executor": "Run",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
@@ -73,7 +87,7 @@
     "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "configurable.group.database.main",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true",
     "应用程序.CodeGenerator.executor": "Run"
@@ -84,6 +98,22 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\htq20\IdeaProjects\campus-security-backend\src\main\resources" />
+      <recent name="C:\Users\htq20\IdeaProjects\campus-security-backend\src\core\src\main\resources" />
+      <recent name="C:\Users\htq20\IdeaProjects\campus-security-backend\src\main\resources\mapper" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SmartCampusApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="campus-security-backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.smartcampus.SmartCampusApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -110,7 +140,9 @@
       <workItem from="1768884767279" duration="87000" />
       <workItem from="1768885053096" duration="830000" />
       <workItem from="1768886046646" duration="1921000" />
-      <workItem from="1768890216984" duration="6654000" />
+      <workItem from="1768890216984" duration="7207000" />
+      <workItem from="1768957908498" duration="896000" />
+      <workItem from="1768958821350" duration="5900000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <option name="closed" value="true" />
@@ -144,7 +176,31 @@
       <option name="project" value="LOCAL" />
       <updated>1768887467794</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="chore(build): 更新项目构建配置和IDE设置&#10;&#10;- 在模块配置中添加资源文件夹路径&#10;- 配置Java编译器参数支持&#10;- 设置UTF-8编码配置&#10;- 添加Maven仓库配置包括阿里云镜像&#10;- 优化pom.xml中的依赖管理和插件配置&#10;- 更新IDE工作区配置和任务记录">
+      <option name="closed" value="true" />
+      <created>1768923602567</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1768923602567</updated>
+    </task>
+    <task id="LOCAL-00006" summary="chore(build): 更新项目构建配置和IDE设置&#10;&#10;- 在模块配置中添加资源文件夹路径&#10;- 配置Java编译器参数支持&#10;- 设置UTF-8编码配置&#10;- 添加Maven仓库配置包括阿里云镜像&#10;- 优化pom.xml中的依赖管理和插件配置&#10;- 更新IDE工作区配置和任务记录">
+      <option name="closed" value="true" />
+      <created>1768923863835</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1768923863835</updated>
+    </task>
+    <task id="LOCAL-00007" summary="chore(build): 更新项目构建配置和IDE设置&#10;&#10;- 在模块配置中添加资源文件夹路径&#10;- 配置Java编译器参数支持&#10;- 设置UTF-8编码配置&#10;- 添加Maven仓库配置包括阿里云镜像&#10;- 优化pom.xml中的依赖管理和插件配置&#10;- 更新IDE工作区配置和任务记录">
+      <option name="closed" value="true" />
+      <created>1768959357250</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1768959357250</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
