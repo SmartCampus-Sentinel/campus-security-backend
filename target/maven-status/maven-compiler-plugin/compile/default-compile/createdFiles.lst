@@ -14,6 +14,7 @@ com\smartcampus\entity\AlarmDisposal.class
 com\smartcampus\service\ISensorDataService.class
 com\smartcampus\service\impl\StudentReportServiceImpl.class
 com\smartcampus\service\IStudentReportService.class
+com\smartcampus\config\TransactionConfig.class
 com\smartcampus\entity\StudentReport.class
 com\smartcampus\service\impl\UserServiceImpl.class
 com\smartcampus\service\impl\AlarmEventServiceImpl.class
