@@ -68,8 +68,30 @@ pom.xml（Java项目依赖）
 README.md
 ```
 
-## 4. 开发环境搭建
-### 4.1 前置依赖
+## 4. 核心功能实现
+
+### 4.1 事务管理配置
+- **配置文件**: `src/main/java/com/smartcampus/config/TransactionConfig.java`
+- **功能**: 配置Spring事务管理器，确保MyBatis SqlSession和JDBC连接被Spring正确管理
+- **关键注解**: `@EnableTransactionManagement` + `DataSourceTransactionManager` Bean
+- **解决问题**: 消除"SqlSession was not registered for synchronization"警告，确保事务正确提交
+
+### 4.2 登录认证接口
+- **控制器**: `src/main/java/com/smartcampus/controller/AuthController`
+- **接口地址**: `POST /api/auth/login`
+- **业务逻辑**:
+  - 接收用户名和密码
+  - 调用UserService验证用户凭证
+  - 生成UUID令牌（建议后续改为JWT）
+  - 返回用户ID、用户名和令牌
+
+### 4.3 用户认证Service
+- **业务逻辑**: `src/main/java/com/smartcampus/service/impl/UserServiceImpl`
+- **@Transactional(readOnly=true)**: 登录查询使用只读事务，提升性能
+- **数据库查询**: 使用MyBatis-Plus LambdaQueryWrapper进行用户验证
+
+## 5. 开发环境搭建
+### 5.1 前置依赖
 - 需安装：
   1. Java 17+、Maven 3.8+（核心业务服务）
   2. Python 3.14、pip 22+（AI分析服务）
