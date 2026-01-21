@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2085381d-b4f4-4961-9fc0-238f16ef27bd" name="更改" comment="feat(websocket): 集成WebSocket实时通信功能&#10;&#10;- 添加Spring WebSocket依赖和FastJSON库支持&#10;- 配置JVM参数以解决Java 17+反射访问问题&#10;- 创建WebSocketConfig配置类启用WebSocket端点导出&#10;- 实现WebSocketServer类提供实时消息推送功能&#10;- 支持用户连接管理、消息广播和在线人数统计&#10;- 提供群发消息、单播消息和对象序列化功能">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/smartcampus/service/UserWebSocketService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/smartcampus/websocket/WebSocketUserManager.java" afterDir="false" />
+    <list default="true" id="2085381d-b4f4-4961-9fc0-238f16ef27bd" name="更改" comment="feat(websocket): 集成WebSocket实时通信功能&#10;&#10;- 在AuthController中添加UserWebSocketService依赖注入&#10;- 登录成功后异步通知用户登录成功消息&#10;- 添加用户ID到登录响应数据中&#10;- 创建UserWebSocketService提供WebSocket消息推送功能&#10;- 实现通知消息和系统消息数据模型&#10;- 在WebSocketServer连接管理中集成用户连接管理&#10;- 添加WebSocketUserManager管理用户连接映射关系&#10;- 实现用户在线状态检查和消息发送功能">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smartcampus/websocket/LoginWebSocketServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/smartcampus/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartcampus/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartcampus/websocket/WebSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartcampus/websocket/WebSocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/smartcampus/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartcampus/controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartcampus/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartcampus/service/impl/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/smartcampus/websocket/WebSocketServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartcampus/websocket/WebSocketServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +45,15 @@
     "accountId": "af854951-1f2e-443a-817a-646dff97f75e"
   }
 }]]></component>
+  <component name="HttpClientOnboardingState"><![CDATA[{
+  "isOnboardingCommentShown": true
+}]]></component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -53,48 +62,52 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.resources/Docker Compose.yml: Compose 部署.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.resources: Compose 部署.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.campus-security-backend [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.campus-security-backend [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.campus-security-backend [package].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.SmartCampusApplication.executor&quot;: &quot;Run&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/work/DREAMX/proprogram/SmartCampus-Sentinel/campus-security-backend&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Docker&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.CodeGenerator.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.docker-compose.yml.mysql: Compose 部署.executor": "Run",
+    "Docker.docker-compose.yml.redis: Compose 部署.executor": "Run",
+    "Docker.docker-compose.yml: Compose 部署.executor": "Run",
+    "Docker.resources/Docker Compose.yml: Compose 部署.executor": "Run",
+    "Docker.resources: Compose 部署.executor": "Run",
+    "HTTP 请求.generated-requests中的所有.executor": "Run",
+    "Maven.campus-security-backend [clean].executor": "Run",
+    "Maven.campus-security-backend [compile].executor": "Run",
+    "Maven.campus-security-backend [package].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.SmartCampusApplication.executor": "Run",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/work/DREAMX/proprogram/SmartCampus-Sentinel/campus-security-backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "Docker",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.CodeGenerator.executor": "Run"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\work\DREAMX\proprogram\SmartCampus-Sentinel\campus-security-backend" />
@@ -104,7 +117,23 @@
       <recent name="C:\Users\htq20\IdeaProjects\campus-security-backend\src\main\resources\mapper" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="configurationStatuses">
+      <map>
+        <entry key="HttpClient.HttpRequestRunConfigurationType">
+          <value>
+            <map>
+              <entry key="generated-requests中的所有" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="RunManager" selected="Spring Boot.SmartCampusApplication">
+    <configuration name="generated-requests中的所有" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http">
+      <method v="2" />
+    </configuration>
     <configuration name="SmartCampusApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="campus-security-backend" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.smartcampus.SmartCampusApplication" />
@@ -118,6 +147,40 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.mysql: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mysql" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.redis: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="redis" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="resources: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -127,11 +190,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml.mysql: Compose 部署" />
+      <item itemvalue="Docker.docker-compose.yml.redis: Compose 部署" />
+      <item itemvalue="Docker.docker-compose.yml: Compose 部署" />
       <item itemvalue="Docker.resources: Compose 部署" />
+      <item itemvalue="HTTP 请求.generated-requests中的所有" />
       <item itemvalue="Spring Boot.SmartCampusApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose 部署" />
+        <item itemvalue="Docker.docker-compose.yml.mysql: Compose 部署" />
+        <item itemvalue="Docker.docker-compose.yml.redis: Compose 部署" />
+        <item itemvalue="HTTP 请求.generated-requests中的所有" />
         <item itemvalue="Docker.resources: Compose 部署" />
       </list>
     </recent_temporary>
@@ -165,7 +236,7 @@
       <workItem from="1768890216984" duration="7207000" />
       <workItem from="1768957908498" duration="896000" />
       <workItem from="1768958821350" duration="5900000" />
-      <workItem from="1768977587274" duration="5685000" />
+      <workItem from="1768977587274" duration="9605000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <option name="closed" value="true" />
@@ -255,7 +326,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768979365360</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat(websocket): 集成WebSocket实时通信功能&#10;&#10;- 在AuthController中添加UserWebSocketService依赖注入&#10;- 登录成功后异步通知用户登录成功消息&#10;- 添加用户ID到登录响应数据中&#10;- 创建UserWebSocketService提供WebSocket消息推送功能&#10;- 实现通知消息和系统消息数据模型&#10;- 在WebSocketServer连接管理中集成用户连接管理&#10;- 添加WebSocketUserManager管理用户连接映射关系&#10;- 实现用户在线状态检查和消息发送功能">
+      <option name="closed" value="true" />
+      <created>1768984840614</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1768984840614</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -342,7 +421,8 @@
     <MESSAGE value="refactor(entities): 重构实体类结构并更新数据库配置&#10;&#10;- 移除Lombok依赖，手动实现getter/setter方法&#10;- 重命名数据表从alarm_disposal/alarm_event/device_info到t_alarm_disposal/t_alarm_event/t_device_info&#10;- 更新AlarmDisposal实体类字段类型和名称，增加状态和备注字段&#10;- 更新AlarmEvent实体类字段类型和名称，调整告警级别和状态字段&#10;- 更新DeviceInfo实体类字段类型和名称，简化状态管理&#10;- 修改数据库连接配置，更新MySQL连接参数和Redis配置&#10;- 调整应用配置文件结构，优化Docker环境下的数据源配置&#10;- 更新项目依赖版本，统一使用SmartCampus包名&#10;- 删除自动生成的代码生成器配置文件&#10;- 重构LoginDto和Result类，移除Lombok注解并手动实现方法" />
     <MESSAGE value="chore(build): 添加项目构建配置文件&#10;&#10;- 创建 maven-archiver pom.properties 配置文件&#10;- 设置项目 artifactId 为 campus-security-backend&#10;- 配置 groupId 为 com.smartcampus&#10;- 初始化版本号为 0.0.1-SNAPSHOT" />
     <MESSAGE value="feat(websocket): 集成WebSocket实时通信功能&#10;&#10;- 添加Spring WebSocket依赖和FastJSON库支持&#10;- 配置JVM参数以解决Java 17+反射访问问题&#10;- 创建WebSocketConfig配置类启用WebSocket端点导出&#10;- 实现WebSocketServer类提供实时消息推送功能&#10;- 支持用户连接管理、消息广播和在线人数统计&#10;- 提供群发消息、单播消息和对象序列化功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(websocket): 集成WebSocket实时通信功能&#10;&#10;- 添加Spring WebSocket依赖和FastJSON库支持&#10;- 配置JVM参数以解决Java 17+反射访问问题&#10;- 创建WebSocketConfig配置类启用WebSocket端点导出&#10;- 实现WebSocketServer类提供实时消息推送功能&#10;- 支持用户连接管理、消息广播和在线人数统计&#10;- 提供群发消息、单播消息和对象序列化功能" />
+    <MESSAGE value="feat(websocket): 集成WebSocket实时通信功能&#10;&#10;- 在AuthController中添加UserWebSocketService依赖注入&#10;- 登录成功后异步通知用户登录成功消息&#10;- 添加用户ID到登录响应数据中&#10;- 创建UserWebSocketService提供WebSocket消息推送功能&#10;- 实现通知消息和系统消息数据模型&#10;- 在WebSocketServer连接管理中集成用户连接管理&#10;- 添加WebSocketUserManager管理用户连接映射关系&#10;- 实现用户在线状态检查和消息发送功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(websocket): 集成WebSocket实时通信功能&#10;&#10;- 在AuthController中添加UserWebSocketService依赖注入&#10;- 登录成功后异步通知用户登录成功消息&#10;- 添加用户ID到登录响应数据中&#10;- 创建UserWebSocketService提供WebSocket消息推送功能&#10;- 实现通知消息和系统消息数据模型&#10;- 在WebSocketServer连接管理中集成用户连接管理&#10;- 添加WebSocketUserManager管理用户连接映射关系&#10;- 实现用户在线状态检查和消息发送功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
