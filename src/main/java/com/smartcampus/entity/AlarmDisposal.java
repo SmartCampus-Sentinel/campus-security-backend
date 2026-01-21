@@ -1,53 +1,101 @@
 package com.smartcampus.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import java.io.Serializable;
-import java.time.LocalDateTime;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import lombok.Getter;
-import lombok.Setter;
 
-/**
- * <p>
- * 报警处置记录表
- * </p>
- *
- * @author SmartCampusTeam
- * @since 2026-01-20
- */
-@Getter
-@Setter
-@TableName("alarm_disposal")
-@ApiModel(value = "AlarmDisposal对象", description = "报警处置记录表")
-public class AlarmDisposal implements Serializable {
+@TableName("t_alarm_disposal")
+@ApiModel(value = "AlarmDisposal对象", description = "告警处置表")
+public class AlarmDisposal {
 
-    private static final long serialVersionUID = 1L;
+    @TableId(value = "id", type = IdType.AUTO)
+    @ApiModelProperty(value = "处置ID")
+    private Integer id;
 
-    @ApiModelProperty("处置ID")
-    @TableId(value = "disposal_id", type = IdType.AUTO)
-    private Long disposalId;
+    @ApiModelProperty(value = "告警事件ID")
+    private Integer alarmEventId;
 
-    @ApiModelProperty("关联报警ID")
-    @TableField("alarm_id")
-    private Long alarmId;
+    @ApiModelProperty(value = "处置人员ID")
+    private Integer userId;
 
-    @ApiModelProperty("处置人ID(User ID)")
-    @TableField("disposer_id")
-    private Long disposerId;
-
-    @ApiModelProperty("处置时间")
-    @TableField("disposal_time")
-    private LocalDateTime disposalTime;
-
-    @ApiModelProperty("处置说明")
-    @TableField("disposal_content")
+    @ApiModelProperty(value = "处置内容")
     private String disposalContent;
 
-    @ApiModelProperty("处置结果照片URL")
-    @TableField("result_photo_url")
-    private String resultPhotoUrl;
+    @ApiModelProperty(value = "处置结果")
+    private String disposalResult;
+
+    @ApiModelProperty(value = "处置时间")
+    private String disposalTime;
+
+    @ApiModelProperty(value = "状态")
+    private Integer status;
+
+    @ApiModelProperty(value = "备注")
+    private String remark;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getAlarmEventId() {
+        return alarmEventId;
+    }
+
+    public void setAlarmEventId(Integer alarmEventId) {
+        this.alarmEventId = alarmEventId;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
+
+    public String getDisposalContent() {
+        return disposalContent;
+    }
+
+    public void setDisposalContent(String disposalContent) {
+        this.disposalContent = disposalContent;
+    }
+
+    public String getDisposalResult() {
+        return disposalResult;
+    }
+
+    public void setDisposalResult(String disposalResult) {
+        this.disposalResult = disposalResult;
+    }
+
+    public String getDisposalTime() {
+        return disposalTime;
+    }
+
+    public void setDisposalTime(String disposalTime) {
+        this.disposalTime = disposalTime;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
 }

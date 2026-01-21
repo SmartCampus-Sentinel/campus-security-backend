@@ -12,10 +12,33 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    # 更新为Docker容器中的MySQL服务
-    url: jdbc:mysql://localhost:3307/campus_security?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    # Docker中MySQL容器的连接地址
+    url: jdbc:mysql://localhost:3307/campus_security_platform?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&connectTimeout=60000&socketTimeout=60000
     username: root
     password: 123456
+
+    # Redis配置
+    redis:
+      host: localhost
+      port: 6379
+      password: 123456
+      timeout: 10000ms
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+      connection-timeout: 60000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      validation-timeout: 3000
+      leak-detection-threshold: 60000
+
+  # 数据源配置优化，适合Docker环境
+
 
 mybatis-plus:
   mapper-locations: classpath:mapper/**/*.xml
@@ -23,6 +46,14 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    cache-enabled: false  # 在Docker环境中，暂时禁用二级缓存以避免潜在问题
+    call-setters-on-nulls: true
+    jdbc-type-for-null: 'null'
+  global-config:
+    db-config:
+      logic-delete-field: deleted  # 全局逻辑删除字段名
+      logic-delete-value: 1        # 逻辑已删除值
+      logic-not-delete-value: 0    # 逻辑未删除值
 
 logging:
   level:

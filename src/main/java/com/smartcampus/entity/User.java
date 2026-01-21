@@ -1,65 +1,156 @@
 package com.smartcampus.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import java.io.Serializable;
-import java.time.LocalDateTime;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import lombok.Getter;
-import lombok.Setter;
 
-/**
- * <p>
- * 系统用户表
- * </p>
- *
- * @author SmartCampusTeam
- * @since 2026-01-20
- */
-@Getter
-@Setter
-@TableName("sys_user")
-@ApiModel(value = "User对象", description = "系统用户表")
-public class User implements Serializable {
+@TableName("t_user")
+@ApiModel(value = "User对象", description = "用户表")
+public class User {
 
-    private static final long serialVersionUID = 1L;
+    @TableId(value = "id", type = IdType.AUTO)
+    @ApiModelProperty(value = "用户ID")
+    private Integer id;
 
-    @ApiModelProperty("主键ID")
-    @TableId(value = "user_id", type = IdType.AUTO)
-    private Long userId;
-
-    @ApiModelProperty("用户名")
-    @TableField("username")
+    @ApiModelProperty(value = "用户名")
     private String username;
 
-    @ApiModelProperty("密码(加密)")
-    @TableField("password")
+    @ApiModelProperty(value = "密码")
     private String password;
 
-    @ApiModelProperty("角色ID")
-    @TableField("role_id")
-    private Long roleId;
+    @ApiModelProperty(value = "邮箱")
+    private String email;
 
-    @ApiModelProperty("手机号")
-    @TableField("phone")
+    @ApiModelProperty(value = "电话")
     private String phone;
 
-    @ApiModelProperty("状态(1:启用 0:禁用)")
-    @TableField("status")
-    private Boolean status;
+    @ApiModelProperty(value = "角色ID")
+    private Integer roleId;
 
-    @ApiModelProperty("创建时间")
-    @TableField("create_time")
-    private LocalDateTime createTime;
+    @ApiModelProperty(value = "部门")
+    private String department;
 
-    @ApiModelProperty("更新时间")
-    @TableField("update_time")
-    private LocalDateTime updateTime;
+    @ApiModelProperty(value = "头像")
+    private String avatar;
 
-    @ApiModelProperty("逻辑删除(0:未删 1:已删)")
-    @TableField("deleted")
-    private Boolean deleted;
+    @ApiModelProperty(value = "状态")
+    private Integer status;
+
+    @ApiModelProperty(value = "创建时间")
+    private String createTime;
+
+    @ApiModelProperty(value = "更新时间")
+    private String updateTime;
+
+    @ApiModelProperty(value = "备注")
+    private String remark;
+
+    @ApiModelProperty(value = "删除标志")
+    private Integer deleted;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public Integer getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(Integer roleId) {
+        this.roleId = roleId;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public String getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime) {
+        this.createTime = createTime;
+    }
+
+    public String getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(String updateTime) {
+        this.updateTime = updateTime;
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
+
+    public Integer getDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(Integer deleted) {
+        this.deleted = deleted;
+    }
 }
