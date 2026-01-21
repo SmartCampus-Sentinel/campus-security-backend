@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2085381d-b4f4-4961-9fc0-238f16ef27bd" name="更改" comment="chore(build): 更新项目构建配置和IDE设置&#10;&#10;- 在模块配置中添加资源文件夹路径&#10;- 配置Java编译器参数支持&#10;- 设置UTF-8编码配置&#10;- 添加Maven仓库配置包括阿里云镜像&#10;- 优化pom.xml中的依赖管理和插件配置&#10;- 更新IDE工作区配置和任务记录">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/smartcampus/common/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/smartcampus/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/smartcampus/dto/LoginDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microsoft/Windows/PowerShell/PSReadLine/ConsoleHost_history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Microsoft/Windows/PowerShell/PSReadLine/ConsoleHost_history.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartcampus/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartcampus/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartcampus/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartcampus/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/campus-security-backend-1.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/campus-security-backend-1.0.0.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartcampus/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartcampus/service/IUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartcampus/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartcampus/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/smartcampus/generator/CodeGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +20,7 @@
       <list>
         <option value="package-info" />
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -61,12 +52,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.resources/Docker Compose.yml: Compose 部署.executor": "Run",
+    "Docker.resources: Compose 部署.executor": "Run",
     "Maven.campus-security-backend [clean].executor": "Run",
     "Maven.campus-security-backend [compile].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
+    "RequestMappingsPanelWidth0": "793",
+    "RequestMappingsPanelWidth1": "793",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -87,7 +80,7 @@
     "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "Docker",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true",
     "应用程序.CodeGenerator.executor": "Run"
@@ -105,7 +98,7 @@
       <recent name="C:\Users\htq20\IdeaProjects\campus-security-backend\src\main\resources\mapper" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.SmartCampusApplication">
     <configuration name="SmartCampusApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="campus-security-backend" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.smartcampus.SmartCampusApplication" />
@@ -113,6 +106,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="resources: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="src/main/resources/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.resources: Compose 部署" />
+      <item itemvalue="Spring Boot.SmartCampusApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.resources: Compose 部署" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
