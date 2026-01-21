@@ -33,6 +33,12 @@ public class WebSocketServer {
         this.session = session;
         this.userId = userId;
         webSocketSet.put(userId, this); // 加入map中
+        // 将用户连接添加到用户管理器
+        try {
+            WebSocketUserManager.addUserConnection(Integer.parseInt(userId), this);
+        } catch (NumberFormatException e) {
+            System.err.println("无效的用户ID格式: " + userId);
+        }
         addOnlineCount(); // 在线数加1
         System.out.println("用户" + userId + "加入连接! 当前在线人数为:" + getOnlineCount());
     }
@@ -44,6 +50,12 @@ public class WebSocketServer {
     public void onClose() {
         if (!userId.equals("")) {
             webSocketSet.remove(this.userId); // 从set中删除
+            // 从用户管理器中移除
+            try {
+                WebSocketUserManager.removeUserConnection(Integer.parseInt(userId));
+            } catch (NumberFormatException e) {
+                System.err.println("无效的用户ID格式: " + userId);
+            }
             subOnlineCount(); // 在线数减1
             System.out.println("用户" + userId + "退出连接! 当前在线人数为:" + getOnlineCount());
         }
@@ -71,6 +83,12 @@ public class WebSocketServer {
     @OnError
     public void onError(Session session, Throwable error) {
         System.out.println("用户" + userId + "发生错误");
+        // 从用户管理器中移除出错的连接
+        try {
+            WebSocketUserManager.removeUserConnection(Integer.parseInt(userId));
+        } catch (NumberFormatException e) {
+            System.err.println("无效的用户ID格式: " + userId);
+        }
         error.printStackTrace();
     }
 

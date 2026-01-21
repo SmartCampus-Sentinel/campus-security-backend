@@ -4,6 +4,7 @@ import com.smartcampus.common.Result;
 import com.smartcampus.dto.LoginDto;
 import com.smartcampus.entity.User;
 import com.smartcampus.service.IUserService;
+import com.smartcampus.service.UserWebSocketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,6 +21,9 @@ public class AuthController {
 
     @Autowired
     private IUserService userService;
+    
+    @Autowired
+    private UserWebSocketService userWebSocketService;
 
     // 登录接口：前端访问 /auth/login
     @PostMapping("/login")
@@ -36,6 +40,17 @@ public class AuthController {
         Map<String, String> data = new HashMap<>();
         data.put("token", token);
         data.put("username", user.getUsername());
+        data.put("userId", String.valueOf(user.getId())); // 添加用户ID到响应中
+
+        // 4. 异步通知用户登录成功（如果用户已连接WebSocket）
+        new Thread(() -> {
+            try {
+                Thread.sleep(1000); // 延迟1秒，等待前端建立WebSocket连接
+                userWebSocketService.notifyUserLoginSuccess(user.getId());
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        }).start();
 
         // 4. 返回标准格式 (code:200, msg:"操作成功", data: {...})
         return Result.success(data);
