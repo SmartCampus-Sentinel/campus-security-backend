@@ -3,10 +3,11 @@ package com.smartcampus;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
-// 【关键配置】扫描 Mapper 接口，确保 MyBatis 能工作
 @MapperScan("com.smartcampus.mapper")
+@EnableAsync
 public class SmartCampusApplication {
 
     public static void main(String[] args) {

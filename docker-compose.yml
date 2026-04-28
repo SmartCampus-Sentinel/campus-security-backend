@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  mysql-docker:
+    image: mysql:8.0
+    container_name: campus-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: "412412sl"
+      MYSQL_DATABASE: "campus_security"
+      TZ: "Asia/Shanghai"
+    ports:
+      - "3307:3306"  # 这里把容器里的3306映射到了你电脑的3307
+    volumes:
+      # 数据会保存在你项目目录下的 mysql-data 文件夹里
+      - ./mysql-data:/var/lib/mysql
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci

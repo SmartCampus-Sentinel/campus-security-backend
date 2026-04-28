@@ -1,2 +1,54 @@
 done
 npm install
+docker-compose up -d
+docker compose up -d
+claude
+npx @anthropic-ai/claude-code
+node -v
+npm install -g @anthropic-ai/claude-code
+node -v
+claude
+code -v
+npm install -g @anthropic-ai/claude-code
+# 1. 强制检查并确保全局跳过初始化验证（防止换项目后触发握手 Bug）
+'{"hasCompletedOnboarding": true}' | Out-File -Encoding UTF8 "$env:USERPROFILE\.claude.json"
+# 2. 重新声明当前窗口的环境变量（确保这次会话有通行证）
+$env:ANTHROPIC_BASE_URL="https://api.deepseek.com/anthropic"
+$env:ANTHROPIC_MODEL="deepseek-v4-pro[1m]"
+# 3. 检查全局配置文件是否存在，不存在则补全
+write-host "✅ 环境已就绪！现在直接输入 claude 即可。" -ForegroundColor Green
+·# 1. 强制写入跳过验证标记 (直接写死到 htq20 目录)
+'{"hasCompletedOnboarding": true}' | Out-File -Encoding UTF8 "C:\Users\htq20\.claude.json" -Force
+# 2. 注入当前窗口的环境变量
+$env:ANTHROPIC_BASE_URL="https://api.deepseek.com/anthropic"
+$env:ANTHROPIC_MODEL="deepseek-v4-pro[1m]"
+# 3. 检查并创建配置文件夹
+$claudeDir = "C:\Users\htq20\.claude"
+if (!(Test-Path $claudeDir)) {`
+    mkdir $claudeDir -Force`
+}
+# 4. 生成并写入全局配置文件
+$config | Out-File -Encoding UTF8 "$claudeDir\settings.json" -Force
+write-host "✅ 配置已强行写入 htq20 目录！现在输入 claude 试试。" -ForegroundColor Green
+claude
+cladue
+claude
+# 1. 强制写入跳过验证标记 (直接写死到 htq20 目录)
+'{"hasCompletedOnboarding": true}' | Out-File -Encoding UTF8 "C:\Users\htq20\.claude.json" -Force
+# 2. 注入当前窗口的环境变量
+$env:ANTHROPIC_BASE_URL="https://api.deepseek.com/anthropic"
+$env:ANTHROPIC_MODEL="deepseek-v4-pro[1m]"
+# 3. 检查并创建配置文件夹
+$claudeDir = "C:\Users\htq20\.claude"
+if (!(Test-Path $claudeDir)) {`
+    mkdir $claudeDir -Force`
+}
+# 4. 生成并写入全局配置文件
+$config | Out-File -Encoding UTF8 "$claudeDir\settings.json" -Force
+write-host "✅ 配置已强行写入 htq20 目录！现在输入 claude 试试。" -ForegroundColor Green
+claude
+npx @anthropic-ai/claude-code
+claude
+ $env:PATH = "C:\Program Files\nodejs;C:\Users\htq20\AppData\Roaming\npm;" + $env:PATH
+ node -v
+ claude --version
