@@ -1,61 +1,123 @@
 package com.smartcampus.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import java.io.Serializable;
-import java.time.LocalDateTime;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import lombok.Getter;
-import lombok.Setter;
 
-/**
- * <p>
- * 学生隐患上报表
- * </p>
- *
- * @author SmartCampusTeam
- * @since 2026-01-20
- */
-@Getter
-@Setter
-@TableName("student_report")
-@ApiModel(value = "StudentReport对象", description = "学生隐患上报表")
-public class StudentReport implements Serializable {
+@TableName("t_student_report")
+@ApiModel(value = "StudentReport对象", description = "学生报告表")
+public class StudentReport {
 
-    private static final long serialVersionUID = 1L;
+    @TableId(value = "id", type = IdType.AUTO)
+    @ApiModelProperty(value = "报告ID")
+    private Integer id;
 
-    @ApiModelProperty("上报ID")
-    @TableId(value = "report_id", type = IdType.AUTO)
-    private Long reportId;
+    @ApiModelProperty(value = "学生姓名")
+    private String studentName;
 
-    @ApiModelProperty("学生ID(或OpenID)")
-    @TableField("student_id")
+    @ApiModelProperty(value = "学号")
     private String studentId;
 
-    @ApiModelProperty("隐患类型")
-    @TableField("report_type")
+    @ApiModelProperty(value = "报告类型")
     private String reportType;
 
-    @ApiModelProperty("位置描述")
-    @TableField("location")
-    private String location;
+    @ApiModelProperty(value = "报告内容")
+    private String content;
 
-    @ApiModelProperty("详细描述")
-    @TableField("description")
-    private String description;
+    @ApiModelProperty(value = "提交时间")
+    private String submitTime;
 
-    @ApiModelProperty("多媒体文件URL(逗号分隔)")
-    @TableField("media_url")
-    private String mediaUrl;
+    @ApiModelProperty(value = "状态")
+    private Integer status;
 
-    @ApiModelProperty("上报时间")
-    @TableField("report_time")
-    private LocalDateTime reportTime;
+    @ApiModelProperty(value = "审核人")
+    private String reviewer;
 
-    @ApiModelProperty("审核状态(0:待审核 1:已处理 2:驳回)")
-    @TableField("audit_status")
-    private Byte auditStatus;
+    @ApiModelProperty(value = "审核时间")
+    private String reviewTime;
+
+    @ApiModelProperty(value = "备注")
+    private String remark;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
+
+    public String getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
+    }
+
+    public String getReportType() {
+        return reportType;
+    }
+
+    public void setReportType(String reportType) {
+        this.reportType = reportType;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public String getSubmitTime() {
+        return submitTime;
+    }
+
+    public void setSubmitTime(String submitTime) {
+        this.submitTime = submitTime;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public String getReviewer() {
+        return reviewer;
+    }
+
+    public void setReviewer(String reviewer) {
+        this.reviewer = reviewer;
+    }
+
+    public String getReviewTime() {
+        return reviewTime;
+    }
+
+    public void setReviewTime(String reviewTime) {
+        this.reviewTime = reviewTime;
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
 }
