@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mvn compile *)",
+      "Bash(mvn dependency:tree -Dincludes=org.springframework.boot:spring-boot-starter-webflux)",
+      "Read(//c/Users/htq20/.m2/wrapper/**)",
+      "Read(//c/Program Files/**)",
+      "Bash(\"C:/Users/htq20/.m2/wrapper/dists/apache-maven-3.9.14/db91789b/bin/mvn\" compile *)",
+      "Bash(\"C:/Users/htq20/.m2/wrapper/dists/apache-maven-3.9.14/db91789b/bin/mvn\" dependency:tree -Dincludes=org.springframework.boot:spring-boot-starter-webflux)",
+      "Bash(\"C:/Users/htq20/.m2/wrapper/dists/apache-maven-3.9.14/db91789b/bin/mvn\" clean *)",
+      "Bash(java -version)",
+      "Bash(\"C:/Users/htq20/.m2/wrapper/dists/apache-maven-3.9.14/db91789b/bin/mvn\" --version)",
+      "WebSearch"
+    ]
+  }
+}

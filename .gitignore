@@ -1,0 +1,31 @@
+# === Build ===
+target/
+
+# === IDE ===
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+
+# === OS ===
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# === Data ===
+mysql-data/
+redis-data/
+*.sql.bak
+
+# === Env ===
+.env
+*.log
+*.log.*
+
+# === Maven ===
+.mvn/wrapper/maven-wrapper.jar

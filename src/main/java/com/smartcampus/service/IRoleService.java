@@ -13,4 +13,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IRoleService extends IService<Role> {
 
+    /**
+     * 校验角色名是否已存在
+     */
+    void checkRoleNameUnique(String roleName, Long excludeRoleId);
 }

@@ -9,8 +9,31 @@ services:
       MYSQL_DATABASE: "campus_security"
       TZ: "Asia/Shanghai"
     ports:
-      - "3307:3306"  # 这里把容器里的3306映射到了你电脑的3307
+      - "3307:3306"
     volumes:
-      # 数据会保存在你项目目录下的 mysql-data 文件夹里
       - ./mysql-data:/var/lib/mysql
     command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+
+  redis:
+    image: redis:7
+    container_name: campus-redis
+    restart: always
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes
+    volumes:
+      - ./redis-data:/data
+
+  emqx:
+    image: emqx/emqx:5.5
+    container_name: campus-emqx
+    restart: always
+    environment:
+      EMQX_NAME: campus-mqtt
+      EMQX_HOST: 127.0.0.1
+      EMQX_DASHBOARD__DEFAULT_USERNAME: admin
+      EMQX_DASHBOARD__DEFAULT_PASSWORD: public
+    ports:
+      - "1883:1883"
+      - "8083:8083"
+      - "18083:18083"
